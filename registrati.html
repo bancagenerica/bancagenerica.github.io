@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Registrati - Banca Generica</title>
+
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+			    height: 100%;
+                width: 100%;
+			    display: flex;
+			    display: -webkit-flex;
+			    justify-content: center;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
+
+            #contenitore {
+			    width: 100%;
+			    height: 100%;
+			    display: flex;
+			    display: -webkit-flex;
+			    flex-direction: column;
+            }
+
+            #a {
+                background-color: Teal;
+                color: white;
+			    width: 100%;
+			    height: 7.5%;
+                display: flex;
+			    display: -webkit-flex;
+			    flex-direction: row;
+            }
+
+            #a1 {       
+                width: 40%;
+			    height: 100%;
+            }
+
+            #a2 {
+                width: 20%;
+			    height: 100%;
+            }
+
+            #a3 {
+                width: 40%;
+			    height: 100%;
+            }
+
+            #b {
+			    width: 100%;
+			    height: 92.5%;
+                background-color: rgb(230, 255, 255);
+            }
+
+            form {
+                margin-top: 80px;
+                border-radius: 2.5%;
+                background-color: White;
+                padding: 10px;
+                width: 40%;
+                border: 1px solid LightGrey;
+            }
+
+            #messaggio_errore {
+               
+            }
+
+            #torna_indietro {
+                background-color: Teal;
+                color: white;
+                border-radius: 5%;
+                padding: 5px;
+                text-decoration: none;
+            }
+
+            #home {
+                text-decoration: none;
+                color: white;
+            }
+
+            #h1_banca_generica {
+                margin-top: 12px;
+                text-align: center;
+            }
+
+            #h2_login {
+                margin-top: 0px;
+                margin-bottom: 50px;
+                color: Teal;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div id="contenitore">
+            <div id="a">
+                <div id="a1"></div>
+                <div id="a2"><a id="home" href="index.html"><h1 id="h1_banca_generica">BANCA GENERICA</h1></a></div>
+                <div id="a3"></div>
+            </div>
+            <div id="b">
+              <center>
+                    <form method="post" action="salva_registrazione.asp" name="salva_dati">
+                    <h2 id="h2_login">Registrazione</h2>
+                    Nome:&nbsp;<input type="text" name="nome" size="75" required><br><br>
+                    Cognome:&nbsp;<input type="text" name="cognome" size="75" required><br><br>
+                    Via:&nbsp;<input type="text" name="via" size="50" required>&nbsp;Numero civico:&nbsp;<input type="text" name="n_civico" size="5" required><br><br>
+                    Data di nascita:&nbsp;<input type="text" name="data_nascita" size="75" required><br><br>
+                    Residenza:&nbsp;<input type="text" name="residenza" size="75" required><br><br>
+                    Codice fiscale:&nbsp;<input type="text" name="cod_fiscale" size="75" required><br><br>
+                    Codice carta d'identità:&nbsp;<input type="text" name="cod_carta_identita" size="75" required><br><br>
+                    Numero di telefono:&nbsp;<input type="text" name="n_telefono" size="75" required><br><br>
+			        Email:&nbsp;<input type="text" name="email" size="75" required><br><br>
+			        Password:&nbsp;<input type="password" name="password" size="50" required><br><br>
+			        <br><br>
+			        <input type="submit" value="Salva">&nbsp;&nbsp;<input type="reset" value="Cancella tutto">
+		        </form>
+              </center>
+            </div>
+        </div>
+    </body>
+</html>
