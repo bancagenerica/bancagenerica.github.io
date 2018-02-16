@@ -6,7 +6,7 @@
 	Set connessione = Server.CreateObject("ADODB.Connection")
 	Set recordset = Server.CreateObject("ADODB.Recordset")
 	
-    connection_string="Driver={MariaDB ODBC 3.0 Driver};Server=10.0.2.15;DB=test;Port=3306;"
+    connection_string="Driver={MariaDB ODBC 3.0 Driver};Server=93.36.178.169;DB=test;Port=3306;"
 	
 	connessione.open connection_string
 	
