@@ -19,8 +19,8 @@
 	
 	str_sql = "SELECT COD_CLIENTE FROM CLIENTE WHERE EMAIL =" & email & "AND PASSWORD =" & password & ";"
 	
-	response.write str_sql
-	response.end
+	'response.write str_sql
+	'response.end
 	
 	recordset.open str_sql, connessione
 
