@@ -1,15 +1,13 @@
 <%language="Vbscript"
-	
-	On error resume next
-	
+
 	email = request.form("email")
 	password = request.form("password")
 	
 	Set connessione = Server.CreateObject("ADODB.Connection")
 	Set recordset = Server.CreateObject("ADODB.Recordset")
 	
-	response.write email
-	response.end
+	'response.write email
+	'response.end
 	
     connection_string="Driver={MySQL ODBC 5.0.12 Driver};Server=sql11.freemysqlhosting.net;Port=3306;DB=sql11226831;option=3;"
 	
@@ -31,7 +29,8 @@
 		connessione.close
 	    Set connessione = nothing
 	    Set recordset = nothing
-	    response.redirect("errore.html")
+	    response.write err.number
+	    response.end
     else
         connessione.close
 	    Set connessione = nothing
