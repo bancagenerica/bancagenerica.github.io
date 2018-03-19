@@ -1,5 +1,7 @@
 <%language="Vbscript"
 	
+	On error resume next
+	
 	email = request.form("email")
 	password = request.form("password")
 	
